@@ -1,0 +1,9 @@
+.lowlight{
+    width: 90%;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+.hljs{
+    border-radius: 5px;
+}

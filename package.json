@@ -9,8 +9,11 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "highlight.js": "^11.7.0",
+    "marked-react": "^1.3.2",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-lowlight": "^3.0.0"
   },
   "devDependencies": {
     "@types/react": "^18.0.28",
