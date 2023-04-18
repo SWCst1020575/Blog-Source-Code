@@ -57,19 +57,12 @@ function Md() {
     getMarkdownFile();
   });
   function getMarkdownFile() {
-    fetch('./README.md')
+    fetch('https://raw.githubusercontent.com/facebook/react/main/README.md')
       .then(response => response.text())
       .then(text => setMdContent(text))
   }
-  function getMarkdownText() {
-    //const content = fs.readFileSync("./README.md", 'utf-8');
-    return <Markdown renderer={renderer} value={mdContent} />;
-  }
-
   return (
-    <div className="Markdown">
-      {getMarkdownText()}
-    </div>
+    <Markdown renderer={renderer} value={mdContent} />
   )
 }
 

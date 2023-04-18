@@ -1,13 +1,14 @@
 import { useState, useEffect } from 'react';
 import Md from './component/Md';
-function App() {
-  
+import {Layout} from './Layout';
 
-  return (
-    <div className="App">
-      <Md />
-    </div>
-  )
+function App() {
+
+    return (
+        <div className="App">
+            <Layout></Layout>
+        </div>
+    )
 }
 
 export default App
