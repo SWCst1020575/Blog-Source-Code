@@ -1,3 +1,48 @@
 body{
-    background-color: #fffcf6 !important;
+    /* background-color: #fffcf6 !important; */
+}
+.footerText{
+    display: flex;
+    justify-content: center;    
+}
+p{
+    letter-spacing:1px;
+    font-family: 'NotoSans', serif;
+}
+@font-face {
+    font-family: NotoSans;
+    src: url(./font/NotoSans.otf);
+  }
+  
+.introFont{
+    font-size: 16pt;
+}
+.introSubTitleFont{
+    width: 100%;
+    font-size: 18pt;
+    font-weight: bold;
+}
+.introFontTitle{
+    display: flex;
+    justify-content: center;    
+    font-size: 20pt;
+    font-weight: bold;
+}
+.dividerStyle{
+    height: 2px;
+    width: 85%;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    margin: 12px 0px 20px 0px;
+}
+.contactLink{
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0%); 
+    margin: 16px 0px 16px 0px;
+    width: 180px;
+}
+.homeBlock{
+    padding: 28px 0 28px 0;
 }

@@ -23,23 +23,17 @@ import kotlinStyle from 'highlight.js/lib/languages/kotlin'
 import 'highlight.js/styles/base16/railscasts.css'
 
 Lowlight.registerLanguage('sh', shStyle);
-Lowlight.registerLanguage('bash', shStyle);
 Lowlight.registerLanguage('js', jsStyle);
-Lowlight.registerLanguage('javascript', jsStyle);
 Lowlight.registerLanguage('ts', tsStyle);
-Lowlight.registerLanguage('typescript', tsStyle);
 Lowlight.registerLanguage('c', cStyle);
-Lowlight.registerLanguage('cpp', cppStyle);
 Lowlight.registerLanguage('c++', cppStyle);
 Lowlight.registerLanguage('py', pyStyle);
-Lowlight.registerLanguage('python', pyStyle);
 Lowlight.registerLanguage('java', javaStyle);
 Lowlight.registerLanguage('go', goStyle);
 Lowlight.registerLanguage('json', jsonStyle);
 Lowlight.registerLanguage('rust', rustStyle);
 Lowlight.registerLanguage('dart', dartStyle);
 Lowlight.registerLanguage('cs', csStyle);
-Lowlight.registerLanguage('c#', csStyle);
 Lowlight.registerLanguage('dockerfile', dockerStyle);
 Lowlight.registerLanguage('latex', latexStyle);
 Lowlight.registerLanguage('kotlin', kotlinStyle);
