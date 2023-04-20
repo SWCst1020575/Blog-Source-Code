@@ -48,7 +48,7 @@ function Home() {
                             <Grid xs={10} sm={5.5}>
                                 <Grid.Container justify="center">
                                     <Grid xs={12} >
-                                        <Text className="introSubTitleFont">Code management</Text>
+                                        <Text className="introSubTitleFont">Development tools</Text>
                                     </Grid>
                                     <Grid xs={12} >
                                         <ul style={{ listStylePosition: 'outside', listStyleType: "disc" }}>
