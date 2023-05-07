@@ -26,8 +26,8 @@ function NavTop() {
     const collapseItems = [
         "Home",
         "Project",
-        "Learning",
-        "Entertainment",
+        //"Learning",
+        //"Entertainment",
     ];
     return (
         <Navbar maxWidth="fluid" isBordered shouldHideOnScroll variant="sticky" css={{ fontSize: "14pt" }}>

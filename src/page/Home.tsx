@@ -16,31 +16,32 @@ function Home() {
                 mw: "1000px",
                 left: "50%",
                 transform: "translate(-50%, 0%)",
-                padding: "0px 50px 0px 50px"
+                padding: "0px 60px 0px 60px"
             }}>
                 <Card.Body>
                     <Container className="homeBlock">
                         <Text className="introFontTitle">Introduction</Text>
                         <Card.Divider className="dividerStyle" />
-                        <Text className="introFont">Hi, I'm Albireo. You also can call me Albi.</Text>
-                        <Text className="introFont">歡迎來到我的網站，這是我放置作品集和Blog的地方。Blog我區分為學習內容和娛樂內容，學習的部分我會分享我的學習紀錄和一些看法，也有可能會更新系列的教學文章。娛樂部份我會寫一些遊戲感想和雜七雜八的內容。</Text>
+                        <Text className="introFont">&emsp;&emsp;歡迎來到我的網站，這是我放置作品集和Blog的地方。Blog的部分目前尚未推出，我放置學習內容和娛樂內容，學習的部分我會分享我的學習紀錄和一些看法，也有可能會更新系列的教學文章。娛樂部份我會寫一些遊戲感想或雜七雜八的內容。</Text>
                     </Container>
                     <Container className="homeBlock">
                         <Text className="introFontTitle">Skill</Text>
                         <Card.Divider className="dividerStyle" />
                         <Grid.Container justify="center">
+                            <Grid xs={0} sm={1} />
                             <Grid xs={10} sm={5.5}>
                                 <Grid.Container justify="center">
                                     <Grid xs={12} >
                                         <Text className="introSubTitleFont">Programming languages</Text>
                                     </Grid>
-                                    <Grid xs={12}>
+                                    <Grid xs={11}>
                                         <ul style={{ display: "inline-block", listStylePosition: 'outside', listStyleType: "disc" }}>
                                             <li className="introFont">C/C++</li>
                                             <li className="introFont">Python</li>
                                             <li className="introFont">JavaScript/TypeScript</li>
                                             <li className="introFont">Java</li>
                                             <li className="introFont">C#</li>
+                                            <li className="introFont">Go</li>
                                         </ul>
                                     </Grid>
                                 </Grid.Container>
@@ -50,20 +51,22 @@ function Home() {
                                     <Grid xs={12} >
                                         <Text className="introSubTitleFont">Development tools</Text>
                                     </Grid>
-                                    <Grid xs={12} >
+                                    <Grid xs={11} >
                                         <ul style={{ listStylePosition: 'outside', listStyleType: "disc" }}>
-                                            <li className="introFont">git</li>
-                                            <li className="introFont">docker</li>
+                                            <li className="introFont">Git</li>
+                                            <li className="introFont">Docker</li>
+                                            <li className="introFont">Terraform</li>
                                         </ul>
                                     </Grid>
                                 </Grid.Container>
                             </Grid>
+                            <Grid xs={0} sm={1} />
                             <Grid xs={10} sm={5.5}>
                                 <Grid.Container justify="center">
                                     <Grid xs={12} >
                                         <Text className="introSubTitleFont">Frontend development</Text>
                                     </Grid>
-                                    <Grid xs={12} >
+                                    <Grid xs={11} >
                                         <ul style={{ listStylePosition: 'outside', listStyleType: "disc" }}>
                                             <li className="introFont">html/css</li>
                                             <li className="introFont">React</li>
@@ -77,22 +80,24 @@ function Home() {
                                     <Grid xs={12} >
                                         <Text className="introSubTitleFont">Backend development</Text>
                                     </Grid>
-                                    <Grid xs={12} >
+                                    <Grid xs={11} >
                                         <ul style={{ listStylePosition: 'outside', listStyleType: "disc" }}>
-                                            <li className="introFont">MySQL</li>
+                                            <li className="introFont">SQL</li>
                                         </ul>
                                     </Grid>
                                 </Grid.Container>
                             </Grid>
+                            <Grid xs={0} sm={1} />
                             <Grid xs={10} sm={5.5}>
                                 <Grid.Container justify="center">
                                     <Grid xs={12} >
                                         <Text className="introSubTitleFont">Cloud service</Text>
                                     </Grid>
-                                    <Grid xs={12} >
+                                    <Grid xs={11} >
                                         <ul style={{ listStylePosition: 'outside', listStyleType: "disc" }}>
                                             <li className="introFont">Firebase</li>
                                             <li className="introFont">AWS</li>
+                                            <li className="introFont">Azure</li>
                                         </ul>
                                     </Grid>
                                 </Grid.Container>
@@ -102,13 +107,32 @@ function Home() {
                                     <Grid xs={12} >
                                         <Text className="introSubTitleFont">Game engine</Text>
                                     </Grid>
-                                    <Grid xs={12} >
+                                    <Grid xs={11} >
                                         <ul style={{ listStylePosition: 'outside', listStyleType: "disc" }}>
                                             <li className="introFont">Allegro5</li>
                                             <li className="introFont">Cocos2d</li>
                                             <li className="introFont">Unity</li>
                                         </ul>
                                     </Grid>
+                                </Grid.Container>
+                            </Grid>
+                            <Grid xs={0} sm={1} />
+                            <Grid xs={10} sm={5.5} >
+                                <Grid.Container justify="center">
+                                    <Grid xs={12} >
+                                        <Text className="introSubTitleFont">Other technique</Text>
+                                    </Grid>
+                                    <Grid xs={11} >
+                                        <ul style={{ listStylePosition: 'outside', listStyleType: "disc" }}>
+                                            <li className="introFont">CUDA programming</li>
+                                        </ul>
+                                    </Grid>
+                                </Grid.Container>
+                            </Grid>
+                            <Grid xs={10} sm={5.5}>
+                                <Grid.Container justify="center">
+                                    <Grid xs={12} />
+                                    <Grid xs={11} />
                                 </Grid.Container>
                             </Grid>
                         </Grid.Container>

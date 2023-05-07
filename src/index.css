@@ -21,6 +21,7 @@ p{
     width: 100%;
     font-size: 18pt;
     font-weight: bold;
+    width: max-content;
 }
 .introFontTitle{
     display: flex;
@@ -30,7 +31,7 @@ p{
 }
 .dividerStyle{
     height: 2px;
-    width: 85%;
+    width: 95%;
     position: relative;
     left: 50%;
     transform: translate(-50%, 0%);
@@ -46,3 +47,6 @@ p{
 .homeBlock{
     padding: 28px 0 28px 0;
 }
+/* .projectCardImage{
+    background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%);
+} */
