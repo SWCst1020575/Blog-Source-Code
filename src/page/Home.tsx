@@ -20,9 +20,10 @@ function Home() {
             }}>
                 <Card.Body>
                     <Container className="homeBlock">
-                        <Text className="introFontTitle">Introduction</Text>
+                        <Text className="introFontTitle">About</Text>
                         <Card.Divider className="dividerStyle" />
-                        <Text className="introFont">&emsp;&emsp;歡迎來到我的網站，這是我放置作品集和Blog的地方。Blog的部分目前尚未推出，我放置學習內容和娛樂內容，學習的部分我會分享我的學習紀錄和一些看法，也有可能會更新系列的教學文章。娛樂部份我會寫一些遊戲感想或雜七雜八的內容。</Text>
+                        <Text css={{ justifyContent: "center", display: "flex" }} className="introFont">Albireo, Su</Text>
+                        <Text css={{ justifyContent: "center", display: "flex" }} className="introFont">A student doesn't major in computer science but like programming.</Text>
                     </Container>
                     <Container className="homeBlock">
                         <Text className="introFontTitle">Skill</Text>
@@ -83,6 +84,7 @@ function Home() {
                                     <Grid xs={11} >
                                         <ul style={{ listStylePosition: 'outside', listStyleType: "disc" }}>
                                             <li className="introFont">SQL</li>
+                                            <li className="introFont">REST API design</li>
                                         </ul>
                                     </Grid>
                                 </Grid.Container>

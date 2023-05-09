@@ -8,7 +8,8 @@ const lightTheme = createTheme({
         colors: {
             pureColor: "#000000",
             tagBgColor: "#cffffd",
-            projectCardFooterBg:"#0f1114A6",
+            tagOutline: "#ababab",
+            projectCardFooterBg: "#0f1114A6",
             projectBgMask: "linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.7))"
         } // optional
     }
@@ -18,12 +19,13 @@ const darkTheme = createTheme({
     type: 'dark',
     theme: {
         colors: {
-            selection:"#1f999c",
+            selection: "#1f999c",
             pureColor: "#FFFFFF",
             background: "#131316",
             backgroundContrast: "#15161c",
-            tagBgColor: "#3d928e",
-            projectCardFooterBg:"#0f111400",
+            tagBgColor: "#2d7b78",
+            tagOutline: "#78ad97",
+            projectCardFooterBg: "#0f111400",
             projectBgMask: "linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0))"
         }, // optional
     }
