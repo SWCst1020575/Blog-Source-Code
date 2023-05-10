@@ -5,38 +5,58 @@ import { useState } from "react";
 import cIcon from "../svg/c.svg"
 import cppIcon from "../svg/cpp.svg"
 import jsIcon from "../svg/js.svg"
+import tsIcon from "../svg/ts.svg"
+import goIcon from "../svg/go.svg"
+import pyIcon from "../svg/py.svg"
+import csIcon from "../svg/cs.svg"
+import javaIcon from "../svg/java.svg"
+import nodeIcon from "../svg/nodejs.svg"
+import bashIcon from "../svg/bash.svg"
 type Props = {
     project: ProjectItem
 }
 export default function ProjectCard(props: Props) {
     const langIcon = (lang: string) => {
+        var icon: string = "";
         switch (lang) {
             case "c":
-                return <Card.Image
-                    src={cIcon}
-                    css={{ background: "#00000000", br: "50%", padding: "4px 4px 4px 4px" }}
-                    height={40}
-                    width={40}
-                    alt="Lang icon"
-                />;
+                icon = cIcon;
+                break
             case "cpp":
-                return <Card.Image
-                    src={cppIcon}
-                    css={{ background: "#00000000", br: "50%", padding: "4px 4px 4px 4px" }}
-                    height={40}
-                    width={40}
-                    alt="Lang icon"
-                />;
+                icon = cppIcon;
+                break
             case "js":
-                return <Card.Image
-                    src={jsIcon}
-                    css={{ background: "#00000000", br: "50%", padding: "4px 4px 4px 4px" }}
-                    height={40}
-                    width={40}
-                    alt="Lang icon"
-                />;
+                icon = jsIcon;
+                break
+            case "ts":
+                icon = tsIcon;
+                break
+            case "go":
+                icon = goIcon;
+                break
+            case "py":
+                icon = pyIcon;
+                break
+            case "nodejs":
+                icon = nodeIcon;
+                break
+            case "cs":
+                icon = csIcon;
+                break
+            case "java":
+                icon = javaIcon;
+                break
+            case "bash":
+                icon = bashIcon;
+                break
         }
-        return <div />;
+        return <Card.Image
+            src={icon}
+            css={{ background: "#00000000", br: "50%", padding: "4px 4px 4px 4px" }}
+            height={40}
+            width={40}
+            alt="Lang icon"
+        />;;
     }
     const renderTag = () => {
         let projectLists = [];
