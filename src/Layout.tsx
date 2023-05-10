@@ -1,7 +1,7 @@
 import { Box } from "./component/Box";
 import NavTop from "./component/NavTop";
 import Footer from "./component/Footer";
-import { Routes, Route } from 'react-router-dom';
+import {  Routes, Route } from 'react-router-dom';
 import { lazy } from "react";
 
 // lazy import to improve load speed
@@ -13,15 +13,14 @@ export const Layout = () => (
             maxW: "100%"
         }}
     >
+        
         <NavTop />
-        <Routes>
-            <Route path='/' >
-                <Route index element={<Home />} />
-                <Route path="home" element={<Home />} />
-                <Route path='project' element={<Project />} />
-            </Route>
-        </Routes>
-        {/* <Home /> */}
+        
+            <Routes>
+                <Route path='/' element={<Home />} />
+                <Route path="/home" element={<Home />} />
+                <Route path='/project' element={<Project />} />
+            </Routes>
         <Footer />
     </Box>
 );

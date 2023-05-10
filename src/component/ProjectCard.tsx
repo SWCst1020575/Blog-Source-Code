@@ -1,10 +1,43 @@
 import { Card, Text, Button, Row, Grid, Container } from "@nextui-org/react";
 import { SiCplusplus } from "react-icons/si";
 import ProjectItem from "../interface/project"
+import { useState } from "react";
+import cIcon from "../svg/c.svg"
+import cppIcon from "../svg/cpp.svg"
+import jsIcon from "../svg/js.svg"
 type Props = {
     project: ProjectItem
 }
 export default function ProjectCard(props: Props) {
+    const langIcon = (lang: string) => {
+        switch (lang) {
+            case "c":
+                return <Card.Image
+                    src={cIcon}
+                    css={{ background: "#00000000", br: "50%", padding: "4px 4px 4px 4px" }}
+                    height={40}
+                    width={40}
+                    alt="Lang icon"
+                />;
+            case "cpp":
+                return <Card.Image
+                    src={cppIcon}
+                    css={{ background: "#00000000", br: "50%", padding: "4px 4px 4px 4px" }}
+                    height={40}
+                    width={40}
+                    alt="Lang icon"
+                />;
+            case "js":
+                return <Card.Image
+                    src={jsIcon}
+                    css={{ background: "#00000000", br: "50%", padding: "4px 4px 4px 4px" }}
+                    height={40}
+                    width={40}
+                    alt="Lang icon"
+                />;
+        }
+        return <div />;
+    }
     const renderTag = () => {
         let projectLists = [];
         var tagList = props.project.tag.split(",")
@@ -45,13 +78,7 @@ export default function ProjectCard(props: Props) {
                     >
                         <Grid.Container >
                             <Grid xs={1.5} sm={1} alignItems="center">
-                                <Card.Image
-                                    src={"./src/svg/" + props.project.lang + ".svg"}
-                                    css={{ background: "#00000000", br: "50%", padding: "4px 4px 4px 4px" }}
-                                    height={40}
-                                    width={40}
-                                    alt="Lang icon"
-                                />
+                                {langIcon(props.project.lang)}
                             </Grid>
 
                             <Grid xs={8.5} sm={9}>
