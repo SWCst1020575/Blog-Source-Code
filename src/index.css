@@ -4,8 +4,8 @@
     justify-content: center;    
 }
 p{
-    letter-spacing:1px;
-    font-family: 'NotoSans', serif;
+    letter-spacing:1px !important;
+    font-family: 'NotoSans', serif !important;
 }
 @font-face {
     font-family: NotoSans;
@@ -40,7 +40,7 @@ p{
     left: 50%;
     transform: translate(-50%, 0%); 
     margin: 16px 0px 16px 0px;
-    width: 180px;
+    width: 180px !important;
 }
 .homeBlock{
     padding: 28px 0 28px 0;
