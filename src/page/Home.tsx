@@ -19,14 +19,16 @@ function Home() {
                 padding: "0px 60px 0px 60px"
             }}>
                 <Card.Body>
-                    <Container className="homeBlock">
+                    <Container className="homeBlock" >
                         <Text className="introFontTitle">About</Text>
                         <Card.Divider className="dividerStyle" />
                         <Text css={{ justifyContent: "center", display: "flex" }} className="introFont">Albireo, Su</Text>
-                        <Text css={{ justifyContent: "center", display: "flex" }} className="introFont">A student doesn't major in computer science but like programming.</Text>
+                        <Text css={{ justifyContent: "center", display: "flex" }} className="introFont">Bachelor of Interdisciplinary Program of Sciences,</Text>
+                        <Text css={{ justifyContent: "center", display: "flex" }} className="introFont">National Tsing Hua University (2020~)</Text>
+                        <Text css={{ justifyContent: "center", display: "flex" }} className="introFont">Major in Data Science, minor in Computer Science.</Text>
                     </Container>
                     <Container className="homeBlock">
-                        <Text className="introFontTitle">Skill</Text>
+                        <Text className="introFontTitle">Skill / Experience</Text>
                         <Card.Divider className="dividerStyle" />
                         <Grid.Container justify="center">
                             <Grid xs={0} sm={1} />
@@ -35,11 +37,22 @@ function Home() {
                                     <Grid xs={12} >
                                         <Text className="introSubTitleFont">Programming languages</Text>
                                     </Grid>
+                                    <Grid xs={12}>
+                                        <Text style={{ fontSize: "16pt", fontWeight: "bold" }}>Familiar with:</Text>
+                                    </Grid >
                                     <Grid xs={11}>
+
                                         <ul style={{ display: "inline-block", listStylePosition: 'outside', listStyleType: "disc" }}>
                                             <li className="introFont">C/C++</li>
                                             <li className="introFont">Python</li>
                                             <li className="introFont">JavaScript/TypeScript</li>
+                                        </ul>
+                                    </Grid>
+                                    <Grid xs={12}>
+                                        <Text style={{ fontSize: "16pt", fontWeight: "bold" }}>Experience in:</Text>
+                                    </Grid >
+                                    <Grid xs={11}>
+                                        <ul style={{ display: "inline-block", listStylePosition: 'outside', listStyleType: "disc" }}>
                                             <li className="introFont">Java</li>
                                             <li className="introFont">C#</li>
                                             <li className="introFont">Go</li>
@@ -71,7 +84,7 @@ function Home() {
                                         <ul style={{ listStylePosition: 'outside', listStyleType: "disc" }}>
                                             <li className="introFont">html/css</li>
                                             <li className="introFont">React</li>
-                                            <li className="introFont">Android app (Java)</li>
+                                            <li className="introFont">Android app (Java/React Native)</li>
                                         </ul>
                                     </Grid>
                                 </Grid.Container>

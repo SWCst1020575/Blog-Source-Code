@@ -17,7 +17,6 @@ function Footer() {
                 position: "relative",
             }} />
             <Text className="footerText">Copyright © 2023 Albireo, Su</Text>
-            <Text className="footerText">You can cite the contents in this site.</Text>
         </Container>
     );
 }
