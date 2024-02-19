@@ -5,8 +5,11 @@ import {  Routes, Route } from 'react-router-dom';
 import { lazy } from "react";
 
 // lazy import to improve load speed
-const Home = lazy(() => import('./page/Home'));
-const Project = lazy(() => import('./page/Project'));
+// const Home = lazy(() => import('./page/Home'));
+// const Project = lazy(() => import('./page/Project'));
+import Home from "./page/Home";
+import Project from "./page/Project";
+
 export const Layout = () => (
     <Box
         css={{

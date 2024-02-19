@@ -5,44 +5,44 @@ import ProjectItem from "../interface/project"
 export default function Project() {
     const [projects, setProjects] = useState([]);
 
-    useEffect(() => {
-        fetch('https://app-linux-blog-web-backend.azurewebsites.net/api/project', {
-            method: 'GET',
-            headers: {
-                'Content-Type': 'application/json'
-            }
-        })
-            .then((res) => res.json())
-            .then((data) => {
-                setProjects(data.ResultMessage);
-            })
-            .catch((err) => {
-                console.log(err.message);
-            });
-    }, []);
-    const renderProject = () => {
-        let projectLists = [];
-        for (var i of projects) {
-            const project: ProjectItem = {
-                title: i["title"],
-                description: i["description"],
-                lang: i["lang"],
-                tag: i["tag"],
-                link: i["link"],
-                imgLink: i["imgLink"]
-            };
-            projectLists.unshift(
-                <Grid.Container key={"Grid" + i["title"]}>
-                    <Grid key={"Grid1" + i["title"]} xs={0.5} sm={0} />
-                    <Grid key={"Grid2" + i["title"]} xs={11} sm={12}>
-                        <ProjectCard key={i["title"]} project={project} />
-                    </Grid>
-                    <Grid key={"Grid3" + i["title"]} xs={0.5} sm={0} />
-                </Grid.Container>
-            )
-        }
-        return projectLists;
-    }
+    // useEffect(() => {
+    //     fetch('https://app-linux-blog-web-backend.azurewebsites.net/api/project', {
+    //         method: 'GET',
+    //         headers: {
+    //             'Content-Type': 'application/json'
+    //         }
+    //     })
+    //         .then((res) => res.json())
+    //         .then((data) => {
+    //             setProjects(data.ResultMessage);
+    //         })
+    //         .catch((err) => {
+    //             console.log(err.message);
+    //         });
+    // }, []);
+    // const renderProject = () => {
+    //     let projectLists = [];
+    //     for (var i of projects) {
+    //         const project: ProjectItem = {
+    //             title: i["title"],
+    //             description: i["description"],
+    //             lang: i["lang"],
+    //             tag: i["tag"],
+    //             link: i["link"],
+    //             imgLink: i["imgLink"]
+    //         };
+    //         projectLists.unshift(
+    //             <Grid.Container key={"Grid" + i["title"]}>
+    //                 <Grid key={"Grid1" + i["title"]} xs={0.5} sm={0} />
+    //                 <Grid key={"Grid2" + i["title"]} xs={11} sm={12}>
+    //                     <ProjectCard key={i["title"]} project={project} />
+    //                 </Grid>
+    //                 <Grid key={"Grid3" + i["title"]} xs={0.5} sm={0} />
+    //             </Grid.Container>
+    //         )
+    //     }
+    //     return projectLists;
+    // }
     return (
         <Container fluid css={{
             padding: "24px 0px 24px 0px"
