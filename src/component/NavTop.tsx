@@ -47,7 +47,7 @@ function NavTop() {
                 variant="underline"
             >
                 {collapseItems.map((item, index) => (
-                    <Navbar.Link key={item} isActive={index === getCurrentPage()} href={'/' + item.toLowerCase()}>{item}</Navbar.Link>
+                    <Navbar.Link key={item} isActive={index === getCurrentPage()} href={'/#/' + item.toLowerCase()}>{item}</Navbar.Link>
                 ))}
             </Navbar.Content>
             <Navbar.Content>
@@ -72,7 +72,7 @@ function NavTop() {
                             css={{
                                 minWidth: "100%",
                             }}
-                            href={'/' + item.toLowerCase()}
+                            href={'/#/' + item.toLowerCase()}
                         >
                             {item}
                         </Link>

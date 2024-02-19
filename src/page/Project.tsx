@@ -58,7 +58,10 @@ export default function Project() {
                 }}>
 
 
-                {renderProject()}
+                {/* {renderProject()} */}
+                <Container css={{ justifyContent: "center", width: "fit-content", fontSize: "22px", fontWeight: "bold", marginTop: "16px", marginBottom: "16px" }}>
+                    Due to platform migration, this page is closed currently. 🚧🚧🚧
+                </Container>
 
 
             </Card>

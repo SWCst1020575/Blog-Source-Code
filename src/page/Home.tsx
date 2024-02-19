@@ -49,7 +49,7 @@ function Home() {
                                         </ul>
                                     </Grid>
                                     <Grid xs={12}>
-                                        <Text style={{ fontSize: "16pt", fontWeight: "bold" }}>Experience in:</Text>
+                                        <Text style={{ fontSize: "16pt", fontWeight: "bold" }}>Experience:</Text>
                                     </Grid >
                                     <Grid xs={11}>
                                         <ul style={{ display: "inline-block", listStylePosition: 'outside', listStyleType: "disc" }}>
@@ -120,6 +120,21 @@ function Home() {
                             <Grid xs={10} sm={5.5}>
                                 <Grid.Container justify="center">
                                     <Grid xs={12} >
+                                        <Text className="introSubTitleFont">Machine Learning</Text>
+                                    </Grid>
+                                    <Grid xs={11} >
+                                        <ul style={{ listStylePosition: 'outside', listStyleType: "disc" }}>
+                                            <li className="introFont">PyTorch</li>
+                                            <li className="introFont">Data Mining</li>
+                                            <li className="introFont">HuggingFace API</li>
+                                        </ul>
+                                    </Grid>
+                                </Grid.Container>
+                            </Grid>
+                            <Grid xs={0} sm={1} />
+                            <Grid xs={10} sm={5.5}>
+                                <Grid.Container justify="center">
+                                    <Grid xs={12} >
                                         <Text className="introSubTitleFont">Game engine</Text>
                                     </Grid>
                                     <Grid xs={11} >
@@ -131,7 +146,6 @@ function Home() {
                                     </Grid>
                                 </Grid.Container>
                             </Grid>
-                            <Grid xs={0} sm={1} />
                             <Grid xs={10} sm={5.5} >
                                 <Grid.Container justify="center">
                                     <Grid xs={12} >
