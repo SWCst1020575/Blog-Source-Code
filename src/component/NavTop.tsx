@@ -25,7 +25,7 @@ function NavTop() {
     }
     const collapseItems = [
         "Home",
-        "Project",
+        // "Project",
         //"Learning",
         //"Entertainment",
     ];

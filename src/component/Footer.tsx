@@ -16,7 +16,7 @@ function Footer() {
                 background: "#A5A5A570",
                 position: "relative",
             }} />
-            <Text className="footerText">Copyright © 2023 Albireo, Su</Text>
+            <Text className="footerText">2024 Albireo, Su</Text>
         </Container>
     );
 }

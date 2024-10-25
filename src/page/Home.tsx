@@ -24,40 +24,48 @@ function Home() {
                         <Card.Divider className="dividerStyle" />
                         <Text css={{ justifyContent: "center", display: "flex" }} className="introFont">Albireo, Su</Text>
                         <Text css={{ justifyContent: "center", display: "flex" }} className="introFont">Bachelor of Interdisciplinary Program of Sciences,</Text>
-                        <Text css={{ justifyContent: "center", display: "flex" }} className="introFont">National Tsing Hua University (2020~)</Text>
+                        <Text css={{ justifyContent: "center", display: "flex" }} className="introFont">National Tsing Hua University (2020~2024)</Text>
                         <Text css={{ justifyContent: "center", display: "flex" }} className="introFont">Major in Data Science, minor in Computer Science.</Text>
                     </Container>
                     <Container className="homeBlock">
-                        <Text className="introFontTitle">Skill / Experience</Text>
+                        <Text className="introFontTitle">Experience</Text>
                         <Card.Divider className="dividerStyle" />
                         <Grid.Container justify="center">
-                            <Grid xs={0} sm={1} />
-                            <Grid xs={10} sm={5.5}>
+                            {/* <Grid xs={0} sm={1} /> */}
+                            <Grid xs={10.5} sm={10.5}>
+                            <Grid.Container justify="center">
+                                    <Grid xs={12} >
+                                        <Text className="introSubTitleFont">National Tsing Hua University, Hsinchu, Taiwan</Text>
+                                    </Grid>
+                                    <Grid xs={10} >
+                                        <Text className="introFont">Research Assistant (part-time) ｜ 2022 ~ current</Text>
+                                    </Grid>
+                                    <Grid xs={12} >
+                                        <Text className="introSubTitleFont">National Taiwan University, Taipei, Taiwan</Text>
+                                    </Grid>
+                                    <Grid xs={10} >
+                                        <Text className="introFont">Research Assistant (part-time) ｜ 2024 ~ current</Text>
+                                    </Grid>
+
+                                </Grid.Container>
+                            </Grid>
+                            {/* <Grid xs={10} sm={5.5}>
                                 <Grid.Container justify="center">
                                     <Grid xs={12} >
                                         <Text className="introSubTitleFont">Programming languages</Text>
                                     </Grid>
-                                    <Grid xs={12}>
-                                        <Text style={{ fontSize: "16pt", fontWeight: "bold" }}>Familiar with:</Text>
-                                    </Grid >
+                                    
                                     <Grid xs={11}>
 
                                         <ul style={{ display: "inline-block", listStylePosition: 'outside', listStyleType: "disc" }}>
                                             <li className="introFont">C/C++</li>
                                             <li className="introFont">Python</li>
-                                            <li className="introFont">JavaScript/TypeScript</li>
-                                        </ul>
-                                    </Grid>
-                                    <Grid xs={12}>
-                                        <Text style={{ fontSize: "16pt", fontWeight: "bold" }}>Experience:</Text>
-                                    </Grid >
-                                    <Grid xs={11}>
-                                        <ul style={{ display: "inline-block", listStylePosition: 'outside', listStyleType: "disc" }}>
-                                            <li className="introFont">Java</li>
-                                            <li className="introFont">C#</li>
                                             <li className="introFont">Go</li>
+                                            <li className="introFont">JavaScript/TypeScript</li>
+                                            <li className="introFont">Java</li>
                                         </ul>
                                     </Grid>
+
                                 </Grid.Container>
                             </Grid>
                             <Grid xs={10} sm={5.5}>
@@ -163,7 +171,7 @@ function Home() {
                                     <Grid xs={12} />
                                     <Grid xs={11} />
                                 </Grid.Container>
-                            </Grid>
+                            </Grid> */}
                         </Grid.Container>
                     </Container>
                     <Container className="homeBlock">
